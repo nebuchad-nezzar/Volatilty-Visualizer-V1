@@ -59,12 +59,12 @@ export const SimulationPaths: React.FC<SimulationPathsProps> = ({
     smooth: true,
     animation: false,
     xAxis: {
-      title: { text: 'Time Steps', style: { fill: '#9ca3af' } },
+      title: { text: 'Time Steps', style: { fill: '#f3f4f6' } },
       grid: { line: { style: { stroke: '##f3f4f6' } } },
       label: { style: { fill: '#9ca3af' } },
     },
     yAxis: {
-      title: { text: 'Price', style: { fill: '#9ca3af' } },
+      title: { text: 'Price', style: { fill: '#f3f4f6' } },
       grid: { line: { style: { stroke: '#eeeeee' } } },
       label: { style: { fill: '##f3f4f6' } },
     },

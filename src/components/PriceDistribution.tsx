@@ -64,7 +64,7 @@ export const PriceDistribution: React.FC<PriceDistributionProps> = ({
 
   return (
     <div className="bg-surface-darker rounded-lg p-4">
-      <h3 className="text-lg font-medium text-text-primary mb-4">Final Price Distribution</h3>
+      <h3 className="text-lg font-medium text-text-primary mb-4">Price Distribution (PDF)</h3>
       <Column {...config} />
     </div>
   );
