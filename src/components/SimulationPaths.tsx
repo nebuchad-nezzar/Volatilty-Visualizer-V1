@@ -60,13 +60,13 @@ export const SimulationPaths: React.FC<SimulationPathsProps> = ({
     animation: false,
     xAxis: {
       title: { text: 'Time Steps', style: { fill: '#9ca3af' } },
-      grid: { line: { style: { stroke: '#374151' } } },
+      grid: { line: { style: { stroke: '##f3f4f6' } } },
       label: { style: { fill: '#9ca3af' } },
     },
     yAxis: {
       title: { text: 'Price', style: { fill: '#9ca3af' } },
       grid: { line: { style: { stroke: '#eeeeee' } } },
-      label: { style: { fill: '#9ca3af' } },
+      label: { style: { fill: '##f3f4f6' } },
     },
     tooltip: {
       showMarkers: true,

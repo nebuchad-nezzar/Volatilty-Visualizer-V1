@@ -27,7 +27,7 @@ export const MonteCarloSection: React.FC<MonteCarloSectionProps> = ({
   const [isCalculating, setIsCalculating] = useState(false);
 
   useEffect(() => {
-    handleSimulate();
+    handleSimulate();  
   }, [spotPrice, riskFreeRate, timeToExpiry]);
 
   const handleSimulate = async () => {

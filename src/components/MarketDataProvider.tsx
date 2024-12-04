@@ -15,7 +15,7 @@ interface MarketDataContextType {
 const MarketDataContext = createContext<MarketDataContextType | undefined>(undefined);
 
 export const MarketDataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [symbol, setSymbol] = useState('SPY');
+  const [symbol, setSymbol] = useState('BTC');
   
   const { 
     optionsChain,

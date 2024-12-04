@@ -16,7 +16,7 @@ export const Surface3D: React.FC<Surface3DProps> = ({
 }) => {
   const [showCalls, setShowCalls] = useState(true);
   const [showPuts, setShowPuts] = useState(true);
-  const [colorScheme, setColorScheme] = useState<ColorScheme>('plasma');
+  const [colorScheme, setColorScheme] = useState<ColorScheme>('viridis');
   const [dataPoints, setDataPoints] = useState(50);
   const [minDays, setMinDays] = useState(30);
   const [maxDays, setMaxDays] = useState(180);
@@ -65,7 +65,7 @@ export const Surface3D: React.FC<Surface3DProps> = ({
       x: x,
       y: y,
       z: z,
-      colorscale: colorScheme,
+      colorscale: 'Viridis',
       showscale: true,
       colorbar: {
         title: {
