@@ -1,7 +1,7 @@
 import React from 'react';
 import { Eye, EyeOff } from 'lucide-react';
 
-export type ColorScheme =  'viridis' |'plasma' | 'magma' | 'inferno';
+export type ColorScheme =  'Viridis' |'plasma' | 'magma' | 'inferno';
 
 interface VisualizationControlsProps {
   showCalls: boolean;
