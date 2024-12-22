@@ -8,6 +8,7 @@ import { MonteCarloSection } from './components/MonteCarloSection';
 import { Surface4DSection } from './components/Surface4D/Surface4DSection';
 import { HistoricalIVSection } from './components/HistoricalIV/HistoricalIVSection';
 import { SkewAnalysisSection } from './components/SkewAnalysis/SkewAnalysisSection';
+import { GreeksAnalysis } from './components/GreeksAnalysis';
 
 function App() {
   const [spotPrice, setSpotPrice] = useState(100);
@@ -104,6 +105,10 @@ function App() {
                   spotPrice={spotPrice}
                   riskFreeRate={riskFreeRate}
                   timeToExpiry={timeToExpiry}
+                />
+                <GreeksAnalysis
+                  spotPrice={spotPrice}
+                  riskFreeRate={riskFreeRate}
                 />
                 <Surface4DSection
                   spotPrice={spotPrice}
