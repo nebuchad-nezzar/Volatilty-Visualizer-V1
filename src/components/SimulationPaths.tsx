@@ -48,7 +48,7 @@ export const SimulationPaths: React.FC<SimulationPathsProps> = ({
     seriesField: 'type',
     color: (datum: any) => {
       if (datum.category === 'bound') {
-        return 'rgba(255, 255, 255, 0.2)';
+        return 'rgba(253, 253, 253, 0.7)';
       }
       return `rgba(34, 211, 238, ${datum.pathIndex === 0 ? 0.8 : 0.1})`;
     },
@@ -72,7 +72,7 @@ export const SimulationPaths: React.FC<SimulationPathsProps> = ({
       showMarkers: true,
       domStyles: {
         'g2-tooltip': {
-          backgroundColor: '#1f2937',
+          backgroundColor: '#f3f4f6',
           border: '1px solid #374151',
           borderRadius: '0.375rem',
           padding: '8px 12px',
@@ -87,7 +87,7 @@ export const SimulationPaths: React.FC<SimulationPathsProps> = ({
       position: 'top-right',
       itemName: {
         style: {
-          fill: '#9ca3af'
+          fill: '#f3f4f6'
         }
       }
     },

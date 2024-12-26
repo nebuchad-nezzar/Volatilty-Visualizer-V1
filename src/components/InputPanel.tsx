@@ -4,6 +4,8 @@ import { Settings, RefreshCw } from 'lucide-react';
 interface InputPanelProps {
   spotPrice: number;
   setSpotPrice: (value: number) => void;
+  volatility: number;
+  setVolatility: (value: number) => void;
   riskFreeRate: number;
   setRiskFreeRate: (value: number) => void;
   timeToExpiry: number;
@@ -18,6 +20,8 @@ export const InputPanel: React.FC<InputPanelProps> = ({
   setRiskFreeRate,
   timeToExpiry,
   setTimeToExpiry,
+  volatility,
+  setVolatility,
   onReset,
 }) => {
   return (
@@ -63,6 +67,20 @@ export const InputPanel: React.FC<InputPanelProps> = ({
             step="0.1"
           />
         </div>
+        <div>
+    <label className="block text-sm font-medium text-text-primary mb-2">
+      Volatility (%)
+    </label>
+    <input
+      type="number"
+      value={volatility * 100}
+      onChange={(e) => setVolatility(Number(e.target.value) / 100)}
+      className="w-full px-3 py-2 bg-surface-lighter text-text-primary border border-surface-lighter rounded-md focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-accent-primary"
+      min="0"
+      max="100"
+      step="0.1"
+    />
+  </div>
         <div>
           <label className="block text-sm font-medium text-text-primary mb-2">
             Time to Expiry (Years)

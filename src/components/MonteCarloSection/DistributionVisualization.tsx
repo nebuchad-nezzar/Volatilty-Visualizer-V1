@@ -91,13 +91,13 @@ export const DistributionVisualization: React.FC<DistributionVisualizationProps>
     ],
     xAxis: {
       title: { text: 'Price', style: { fill: '#9ca3af' } },
-      grid: { line: { style: { stroke: '#374151' } } },
-      label: { style: { fill: '#9ca3af' } },
+      grid: { line: { style: { stroke: '#f3f4f6' } } },
+      label: { style: { fill: '#f3f4f6' } },
     },
     yAxis: {
       title: { text: 'Density', style: { fill: '#9ca3af' } },
-      grid: { line: { style: { stroke: '#374151' } } },
-      label: { style: { fill: '#9ca3af' } },
+      grid: { line: { style: { stroke: '#f3f4f6' } } },
+      label: { style: { fill: '#f3f4f6' } },
     },
     tooltip: {
       showMarkers: true,

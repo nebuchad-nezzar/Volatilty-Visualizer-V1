@@ -50,7 +50,7 @@ export const PriceDistribution: React.FC<PriceDistributionProps> = ({
     },
     yAxis: {
       title: { text: 'Frequency', style: { fill: '#9ca3af' } },
-      grid: { line: { style: { stroke: '#374151' } } },
+      grid: { line: { style: { stroke: '#f3f4f6' } } },
       label: { style: { fill: '#9ca3af' } },
     },
     tooltip: {

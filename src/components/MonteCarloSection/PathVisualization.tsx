@@ -66,12 +66,12 @@ export const PathVisualization: React.FC<PathVisualizationProps> = ({
     xAxis: {
       title: { text: 'Time Steps', style: { fill: '#9ca3af' } },
       grid: { line: { style: { stroke: '#374151' } } },
-      label: { style: { fill: '#9ca3af' } },
+      label: { style: { fill: '#f3f4f6' } },
     },
     yAxis: {
       title: { text: 'Price', style: { fill: '#9ca3af' } },
       grid: { line: { style: { stroke: '#374151' } } },
-      label: { style: { fill: '#9ca3af' } },
+      label: { style: { fill: '#f3f4f6' } },
     },
     tooltip: {
       showMarkers: true,

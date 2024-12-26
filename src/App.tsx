@@ -9,11 +9,13 @@ import { Surface4DSection } from './components/Surface4D/Surface4DSection';
 import { HistoricalIVSection } from './components/HistoricalIV/HistoricalIVSection';
 import { SkewAnalysisSection } from './components/SkewAnalysis/SkewAnalysisSection';
 import { GreeksAnalysis } from './components/GreeksAnalysis';
+import { VIXSection } from './components/VIX/VIXSection';
 
 function App() {
   const [spotPrice, setSpotPrice] = useState(100);
   const [riskFreeRate, setRiskFreeRate] = useState(0.05);
   const [timeToExpiry, setTimeToExpiry] = useState(1);
+  const [volatility, setVolatility] = useState(0.2);
   const [selectedExpiry, setSelectedExpiry] = useState(30);
   const [activeTab, setActiveTab] = useState<'surface' | 'smile' | 'table' | 'skew'>('surface');
 
@@ -22,6 +24,7 @@ function App() {
     setRiskFreeRate(0.05);
     setTimeToExpiry(1);
     setSelectedExpiry(30);
+    setVolatility(0.2);
   };
 
   return (
@@ -42,10 +45,15 @@ function App() {
             setSpotPrice={setSpotPrice}
             riskFreeRate={riskFreeRate}
             setRiskFreeRate={setRiskFreeRate}
+            volatility={volatility}
+            setVolatility={setVolatility}
             timeToExpiry={timeToExpiry}
             setTimeToExpiry={setTimeToExpiry}
             onReset={handleReset}
           />
+
+          {/* VIX Section at the top for market context */}
+          <VIXSection />
 
           <div className="bg-surface-darker rounded-lg shadow-lg p-4">
             <div className="flex space-x-4 mb-4">
